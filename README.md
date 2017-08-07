@@ -45,17 +45,17 @@ go a head!
 ## Print Screens
 
 #### Login: 
-![](https://github.com/luissanches/reactjs-login-boilerplate/prints/login.png)
+![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/login.png)
 =============
 
 #### Main: 
-![](https://github.com/luissanches/reactjs-login-boilerplate/prints/main.png)
+![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/main.png)
 =============
 
-#### Dawer: 
-![](https://github.com/luissanches/reactjs-login-boilerplate/prints/dawer.png)
+#### Drawer: 
+![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/dawer.png)
 =============
 
 #### Logout: 
-![](https://github.com/luissanches/reactjs-login-boilerplate/prints/logout.png)
+![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/logout.png)
 =============
