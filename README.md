@@ -45,5 +45,17 @@ go a head!
 ## Print Screens
 
 #### Login: 
-![](https://github.com/luissanches/pdv-web-report/blob/master/misc/printscreen/login.png)
+![](https://github.com/luissanches/reactjs-login-boilerplate/prints/login.png)
+=============
+
+#### Main: 
+![](https://github.com/luissanches/reactjs-login-boilerplate/prints/main.png)
+=============
+
+#### Dawer: 
+![](https://github.com/luissanches/reactjs-login-boilerplate/prints/dawer.png)
+=============
+
+#### Logout: 
+![](https://github.com/luissanches/reactjs-login-boilerplate/prints/logout.png)
 =============
