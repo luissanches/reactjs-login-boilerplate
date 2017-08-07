@@ -24,7 +24,7 @@ const styleSheet = createStyleSheet({
   },
 });
 
-class LeftDawer extends Component {
+class LeftDrawer extends Component {
   handleLeftClose = () => {
     this.props.toggleLeftDawerMenu(false);
   }
@@ -109,7 +109,7 @@ class LeftDawer extends Component {
   }
 }
 
-LeftDawer.propTypes = {
+LeftDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
@@ -132,4 +132,4 @@ const mapDispachToProps = (dispatch) => {
 }
 
 
-export default connect(mapStateToProps, mapDispachToProps)(withStyles(styleSheet)(LeftDawer));
+export default connect(mapStateToProps, mapDispachToProps)(withStyles(styleSheet)(LeftDrawer));

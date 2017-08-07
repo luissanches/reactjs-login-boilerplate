@@ -53,7 +53,7 @@ go a head!
 =============
 
 #### Drawer: 
-![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/dawer.png)
+![](https://github.com/luissanches/reactjs-login-boilerplate/blob/master/prints/drawer.png)
 =============
 
 #### Logout: 
