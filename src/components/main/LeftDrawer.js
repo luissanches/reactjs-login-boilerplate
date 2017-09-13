@@ -11,6 +11,7 @@ import SendIcon from 'material-ui-icons/Send';
 import MailIcon from 'material-ui-icons/Mail';
 import DeleteIcon from 'material-ui-icons/Delete';
 import ReportIcon from 'material-ui-icons/Report';
+import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 
 const styleSheet = createStyleSheet({
@@ -34,16 +35,10 @@ class LeftDrawer extends Component {
     const mailFolderListItems = (
       <div>
         <ListItem button>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
+          <Link to="/main/pg2">PAGE 2</Link>
         </ListItem>
         <ListItem button>
-          <ListItemIcon>
-            <StarIcon />
-          </ListItemIcon>
-          <ListItemText primary="Starred" />
+          <Link to="/main/pg3">PAGE 3</Link>
         </ListItem>
         <ListItem button>
           <ListItemIcon>
