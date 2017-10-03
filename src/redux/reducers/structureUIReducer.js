@@ -1,20 +1,17 @@
-const initilizeState = {
-    leftDawerOpen: false
-}
+import initialState from '../reducers/initialState'
+import ih from 'immutability-helper'
 
-const structureUIReducer = (state = initilizeState, action) => {
+const structureUIReducer = (state = initialState.structure, action) => {
     switch (action.type) {
         case 'ToggleLeftDawerMenu': {
-            state = { ...state };
-            state.leftDawerOpen = action.payload;
-            break;
+            let nstate = ih(state, {leftDawerOpen: {$set:action.payload}})
+            return nstate
         }
         default: {
-            break;
+            return initialState.structure
         }
 
     }
-    return state;
 }
 
 export default structureUIReducer

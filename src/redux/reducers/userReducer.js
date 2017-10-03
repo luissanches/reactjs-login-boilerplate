@@ -1,28 +1,22 @@
-const initilizeState = {
-    remember: false, login: '', pws: ''
-}
+import initialState from '../reducers/initialState'
+import ih from 'immutability-helper'
 
-
-const userReducer = (state = initilizeState, action) => {
+const userReducer = (state = initialState.user, action) => {
     switch (action.type) {
         case 'AddCurrentUser': {
-            state = { ...state };
-            state = action.payload;
-            
-            break;
+            let nstate = ih(state,{$set: action.payload})
+            return nstate
         }
         case 'RemoveCurrentUser': {
-            state = { ...state };
-            state = { remember: false, user: '', pws: ''};
-            localStorage.removeItem('userremember');
-            break;
+            let nstate = ih(state,{$set: initialState.user})
+            localStorage.removeItem('userremember')
+            return nstate
         }
         default: {
-            break;
+            return initialState.user
         }
 
     }
-    return state;
 }
 
 export default userReducer

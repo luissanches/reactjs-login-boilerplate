@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, createStyleSheet } from 'material-ui/styles';
 import Drawer from 'material-ui/Drawer';
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
+import List, { ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import InboxIcon from 'material-ui-icons/Inbox';
-import DraftsIcon from 'material-ui-icons/Drafts';
-import StarIcon from 'material-ui-icons/Star';
-import SendIcon from 'material-ui-icons/Send';
-import MailIcon from 'material-ui-icons/Mail';
-import DeleteIcon from 'material-ui-icons/Delete';
-import ReportIcon from 'material-ui-icons/Report';
+// import { ListItemIcon, ListItemText } from 'material-ui/List';
+// import DraftsIcon from 'material-ui-icons/Drafts';
+// import SendIcon from 'material-ui-icons/Send';
+// import MailIcon from 'material-ui-icons/Mail';
+// import DeleteIcon from 'material-ui-icons/Delete';
+// import ReportIcon from 'material-ui-icons/Report';
 import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 
@@ -40,7 +39,7 @@ class LeftDrawer extends Component {
         <ListItem button>
           <Link to="/main/pg3">PAGE 3</Link>
         </ListItem>
-        <ListItem button>
+        {/* <ListItem button>
           <ListItemIcon>
             <SendIcon />
           </ListItemIcon>
@@ -51,13 +50,13 @@ class LeftDrawer extends Component {
             <DraftsIcon />
           </ListItemIcon>
           <ListItemText primary="Drafts" />
-        </ListItem>
+        </ListItem> */}
       </div>
     );
 
     const otherMailFolderListItems = (
       <div>
-        <ListItem button>
+        {/* <ListItem button>
           <ListItemIcon>
             <MailIcon />
           </ListItemIcon>
@@ -74,7 +73,7 @@ class LeftDrawer extends Component {
             <ReportIcon />
           </ListItemIcon>
           <ListItemText primary="Spam" />
-        </ListItem>
+        </ListItem> */}
       </div>
     );
 
@@ -95,7 +94,8 @@ class LeftDrawer extends Component {
         <Drawer
           open={this.props.structureUI.leftDawerOpen}
           onRequestClose={this.handleLeftClose}
-          onClick={this.handleLeftClose}>
+          //onClick={this.handleLeftClose}
+          >
           {sideList}
         </Drawer>
 
